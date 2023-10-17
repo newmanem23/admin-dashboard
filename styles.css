@@ -33,10 +33,6 @@ body {
     background-color: var(--primary);
 }
 
-.sidebar-header {
-    font-weight: bold;
-}
-
 .sidebar-nav {
     display: grid;
     grid-auto-flow: row;
@@ -51,7 +47,6 @@ body {
     background-color: var(--background);
     color: var(--text);
     padding: 1rem 2rem;
-    font-weight: bold;
 }
 
 .main {
@@ -140,6 +135,10 @@ img {
     height: 3rem;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 h3 {
     color: var(--text)
 }
@@ -184,4 +183,15 @@ h3 {
 
 .trending .card li {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending .card li p {
+    margin-bottom: 0.5rem;
+}
+
+.bold {
+    font-weight: bold;
 }
