@@ -22,6 +22,7 @@ body {
 }
 
 .sidebar {
+    position: relative;
     display: grid;
     gap: 2rem;
     grid-auto-flow: row;
@@ -215,4 +216,13 @@ h3 {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
+}
+
+.credit {
+    color: var(--background);
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 1rem;
+    right: auto;
+    left: 1rem;
 }
