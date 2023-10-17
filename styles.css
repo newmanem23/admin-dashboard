@@ -170,12 +170,6 @@ h3 {
     flex-direction: column;
 }
 
-.announcement p,
-.trending p {
-    font-size: 0.75rem;
-    width: 37ch;
-}
-
 .card p {
     color: rgb(150, 150, 155)
 }
@@ -197,6 +191,12 @@ h3 {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+}
+
+.announcement p,
+.trending p {
+    font-size: 0.75rem;
+    width: 37ch;
 }
 
 .bold {
