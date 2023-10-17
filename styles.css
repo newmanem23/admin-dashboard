@@ -135,9 +135,11 @@ img {
     height: 3rem;
 }
 
-img:hover {
+img:hover,
+i:hover {
     cursor: pointer;
 }
+
 
 h3 {
     color: var(--text);
@@ -213,8 +215,4 @@ h3 {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
-}
-
-.options *:hover {
-    cursor: pointer;
 }
