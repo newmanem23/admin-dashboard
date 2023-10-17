@@ -140,7 +140,8 @@ img:hover {
 }
 
 h3 {
-    color: var(--text)
+    color: var(--text);
+    margin-bottom: 1rem;
 }
 
 .user-info img {
@@ -155,7 +156,9 @@ h3 {
 }
 
 .card-container {
-    grid-template-columns: repeat(auto-fit, clamp(150px, 1fr, 200px));
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .card {
@@ -164,7 +167,6 @@ h3 {
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
 }
 
 .announcement p {
@@ -199,6 +201,18 @@ h3 {
     font-weight: bold;
 }
 
-.project {
-    border-left: 0.5rem solid var(--accent)
+.project.card {
+    border-left: 0.5rem solid var(--accent);
+    margin: 0;
+    gap: 1rem;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.options *:hover {
+    cursor: pointer;
 }
